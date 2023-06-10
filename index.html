@@ -24,15 +24,21 @@
         <script>
             let menu = document.getElementById('menu');
             let icon = document.getElementById('icon');
-            icon.addEventListener('click', function(){
+            let menuList = document.querySelector('.menu-list');
+            
+            icon.addEventListener('click', function(event) {
+                event.stopPropagation(); 
                 menu.classList.toggle('open');
-            });
+                menuList.style.display = menu.classList.contains('open') ? 'flex' : 'none';
+             });
+        
+        
             document.addEventListener('click', function() {
-            if (menu.classList.contains('open')) {
-            menu.classList.toggle('close');
-            }
-           });
-        </script>    
+                menu.classList.remove('open');
+                menuList.style.display = 'none';
+            });
+        </script>
+           
         
     </body> 
 </html>

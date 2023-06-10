@@ -4,7 +4,6 @@
 }
 body{
     background-color:#9BABB8 ;
-    margin:auto;
 }
 .back{
     border-radius: 30%;
@@ -17,11 +16,15 @@ body{
  }
 .container{
     margin:30px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 img{
-    width:400px;
-    height:400px;
+    width:300px;
+    height:300px;
     border:solid;
     border-radius:30%;
     transition: 0.5s;

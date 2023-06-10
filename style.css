@@ -33,9 +33,10 @@ body
     height:0;
     border-bottom-left-radius: 100%;
     cursor: pointer;
+    display: none;
 }
 .menu-list{
-    display:flex;
+    display:none;
     align-items: center;
     justify-content: center;
     padding-top: 250px;

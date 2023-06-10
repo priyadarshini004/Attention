@@ -13,18 +13,33 @@ start.addEventListener('click', function(){
         startTimer = setInterval(function() {
             timer();
         }, 1000);
+        h.disabled = true;
+        m.disabled = true;
+        s.disabled = true;
     }
 });
 stop.addEventListener('click',function(){
     clearInterval(startTimer);
     startTimer = null;
+    h.disabled = true;
+    m.disabled = true;
+    s.disabled = true;
+
+    audio.pause();
+    audio.currentTime = 0;
 });
 
 reset.addEventListener('click', function(){
     h.value = 0;
     m.value = 0;
     s.value = 0;
-    stopInterval()
+    stopInterval();
+    h.disabled = false;
+    m.disabled = false;
+    s.disabled = false;
+
+    audio.pause();
+    audio.currentTime = 0;
 });
 
 function timer(){
@@ -48,6 +63,9 @@ function timer(){
 function stopInterval() {
     clearInterval(startTimer);
     startTimer = null;
+    h.disabled = false;
+    m.disabled = false;
+    s.disabled = false;
 }
 
 function playAudio(){

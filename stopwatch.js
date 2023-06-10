@@ -8,6 +8,7 @@ var start = document.getElementById("start");
 var pause = document.getElementById("pause");
 var reset = document.getElementById("reset");
 var interval;
+var click = false;
 
 function timer(){
     seconds++;
@@ -41,11 +42,15 @@ function timer(){
 }
 
 start.addEventListener("click",function() {
+    if(!click){
     interval =  setInterval(timer,1000);
+    click = true;
+    }
 });
 
 pause.addEventListener("click",function() {
     clearInterval(interval);
+    click = false;
 });
 
 reset.addEventListener("click",function(){
@@ -56,4 +61,5 @@ reset.addEventListener("click",function(){
     newseconds.innerHTML = "00";
     newminutes.innerHTML = "00";
     newhours.innerHTML = "00";
+    click = false;
 });
