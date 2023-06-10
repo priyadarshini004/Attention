@@ -1,0 +1,39 @@
+body{
+    background-image: url(images/attention.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-style: bold;
+}
+button {
+    margin:1px;
+    width:90px;
+    height:30px;
+    margin:5px;
+    color:black;
+    border-radius: 30%;
+    outline: none;
+    box-shadow:0, 0, 0;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+button:hover{
+    box-shadow: -3px 3px 0 navy;
+    transform: translateY(-4px);
+}
+
+input{
+    font-size: 20px;
+    margin:0;
+}
+ 
