@@ -48,11 +48,11 @@ button {
     color:black;
     border-radius: 30%;
     outline: none;
-    box-shadow:0, 0, 0;
+    box-shadow:-3px 3px 0 navy;
     cursor: pointer;
-    transition: box-shadow 0.3s, transform 0.3s;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s;
 }
 button:hover{
-    box-shadow: -3px 3px 0 navy;
-    transform: translateY(-4px);
+    box-shadow: none;
+    transform: translateY(4px);
 }

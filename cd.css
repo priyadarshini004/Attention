@@ -2,9 +2,10 @@ body{
     background-image: url(images/attention.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:100% cover;
     background-attachment: fixed;
     overflow: hidden;
+    background-color: #AEBDCA;
 }
 #container{
     display: flex;

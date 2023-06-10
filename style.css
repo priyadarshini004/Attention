@@ -8,8 +8,8 @@ body
     background-image: url(images/nj.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: auto;
+    background-attachment:fixed;
+    background-size:100% auto;
     background-color: whitesmoke;
 }
 .hamburger-menu{
