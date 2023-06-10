@@ -27,7 +27,7 @@ button {
     outline: none;
     box-shadow:-3px 3px 3px navy;
     cursor: pointer;
-    transition: box-shadow 0.3s, transform 0.3s;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s;
 }
 button:hover{
     box-shadow: none;
