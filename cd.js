@@ -25,8 +25,7 @@ stop.addEventListener('click',function(){
     m.disabled = true;
     s.disabled = true;
 
-    audio.pause();
-    audio.currentTime = 0;
+    
 });
 
 reset.addEventListener('click', function(){
@@ -38,8 +37,7 @@ reset.addEventListener('click', function(){
     m.disabled = false;
     s.disabled = false;
 
-    audio.pause();
-    audio.currentTime = 0;
+    
 });
 
 function timer(){
