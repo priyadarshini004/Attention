@@ -9,7 +9,7 @@ var s = document.getElementById("seconds");
 var startTimer = null;
 
 start.addEventListener('click', function(){
-    if(startTimer === null){
+    if(startTimer === null && (h.value > 0 || m.value > 0 || s.value > 0)){
         startTimer = setInterval(function() {
             timer();
         }, 1000);
