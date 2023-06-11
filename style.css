@@ -5,6 +5,7 @@
 }
 body
 {
+    margin:10px;
     background-image: url(images/nj.jpg);
     background-position: center;
     background-repeat: no-repeat;

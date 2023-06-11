@@ -1,12 +1,18 @@
 var start = document.getElementById('start');
 var stop = document.getElementById('stop');
 var reset = document.getElementById('reset');
+var stopsound = document.getElementById('stop-sound');
 
 var h = document.getElementById("hours");
 var m = document.getElementById("minutes");
 var s = document.getElementById("seconds");
 
 var startTimer = null;
+var audio = document.getElementById("ringtone");
+
+stopsound.addEventListener('click',function(){
+    audio.pause();
+});
 
 start.addEventListener('click', function(){
     if(startTimer === null && (h.value > 0 || m.value > 0 || s.value > 0)){
@@ -67,6 +73,5 @@ function stopInterval() {
 }
 
 function playAudio(){
-    var audio = document.getElementById("ringtone");
         audio.play();
 }

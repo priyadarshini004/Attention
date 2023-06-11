@@ -6,6 +6,8 @@ body{
     background-attachment: fixed;
     overflow: hidden;
     background-color: #b0bbd1;
+    margin:10px;
+    padding:10px;
 }
 #container{
     display: flex;
