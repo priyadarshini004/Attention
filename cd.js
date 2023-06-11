@@ -12,6 +12,7 @@ var audio = document.getElementById("ringtone");
 
 stopsound.addEventListener('click',function(){
     audio.pause();
+    audio.currentTime = 0;
 });
 
 start.addEventListener('click', function(){
